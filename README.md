@@ -65,7 +65,7 @@ This project used the **CocoGlide** dataset in the Kaggle environment.
 ### Kaggle usage
 The dataset was loaded and processed directly in **Kaggle notebooks**, where training and evaluation were performed on GPU.
 
-> You can mention your exact Kaggle dataset link here.
+> https://www.kaggle.com/datasets/longnguyen892001/cocoglide
 
 ---
 
