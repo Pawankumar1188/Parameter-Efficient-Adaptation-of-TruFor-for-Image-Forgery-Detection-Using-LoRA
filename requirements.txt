@@ -1,0 +1,15 @@
+numpy
+pandas
+matplotlib
+opencv-python
+Pillow
+scikit-learn
+albumentations
+tqdm
+torch
+torchvision
+timm
+transformers
+peft
+tensorboardX
+pyyaml
