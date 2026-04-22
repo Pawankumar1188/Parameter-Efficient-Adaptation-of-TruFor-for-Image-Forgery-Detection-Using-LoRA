@@ -146,13 +146,16 @@ Fine-tuned Decoder Heads
 Diffusion-aware Forgery Heatmap + Localization Mask
 ```
 
-### Key Idea
-The base TruFor model remains mostly unchanged, while LoRA adds lightweight trainable updates to selected layers.  
-This makes fine-tuning efficient without losing the original model’s forensic knowledge.
+### Architecture Diagram
+![Architecture Diagram](assets/images/architecture%20of%20our%20model.png)
+
+> *LoRA adapters (shown in blue) are injected into selected attention projections while the rest of the backbone remains frozen.*
 
 ---
 
 ## 📊 Results
+![Accuracy Matrix](assets/images/evaluation%20matrix.png)
+![Threshhold](assets/images/Screenshot%202026-04-16%20013243.png)
 
 ### Training Observation
 Training and validation loss decreased steadily, and the best validation checkpoint was obtained around **epoch 4** in the larger experiment.
@@ -172,6 +175,12 @@ Training and validation loss decreased steadily, and the best validation checkpo
 | Predicted Forged Ratio | 0.999973 | 0.245164 |
 | Predicted Forged Pixels | 262136.84 | 64268.17 |
 
+### Accuracy & Metrics Comparison
+
+![Accuracy Matrix](https://raw.githubusercontent.com/your-username/your-repo/main/figures/accuracy_matrix.png)
+
+> *Bar chart comparing Dice, IoU, Precision, Recall, and Accuracy between Baseline and LoRA-Adapted TruFor.*
+
 ### Interpretation
 - The **baseline** tends to over-segment and mark almost everything as forged
 - The **LoRA-adapted model** becomes more selective
@@ -180,19 +189,29 @@ Training and validation loss decreased steadily, and the best validation checkpo
 
 ---
 
-## 🖼 Sample Output
-The project generates:
-- original input image
-- forgery heatmap
-- localization overlay
-- optional comparison between baseline and LoRA-adapted model
+## 🖼 Sample Outputs
 
-Typical qualitative findings:
-- Baseline often produces broad or noisy suspicious regions
-- LoRA-adapted model gives cleaner and more object-focused localization
-- Strong improvement is especially visible in difficult diffusion-style manipulations
+The following visualizations compare the **Baseline TruFor** vs **LoRA-Adapted TruFor** on 5 sample images from the CocoGlide dataset.  
+Each row shows: **Original Image | Ground Truth Mask | Baseline Heatmap | LoRA Heatmap | Overlay**
 
-> Add your sample image outputs in this section for GitHub presentation.
+### Sample 1
+![Sample Output 1](assets/images/Screenshot%202026-04-16%20014852.png)
+
+### Sample 2
+![Sample Output 2](assets/images/Screenshot%202026-04-16%20014933.png)
+
+### Sample 3
+![Sample Output 3](assets/images/Screenshot%202026-04-16%20014948.png)
+
+### Sample 4
+![Sample Output 4](assets/images/Screenshot%202026-04-16%20015004.png)
+
+### Sample 5
+![Sample Output 5](assets/images/Screenshot%202026-04-16%20015101.png)
+> **Key observations:**
+> - Baseline often produces broad or noisy suspicious regions
+> - LoRA-adapted model gives cleaner and more object-focused localization
+> - Strong improvement is especially visible in difficult diffusion-style manipulations
 
 ---
 
@@ -216,14 +235,19 @@ project-root/
 │   ├── checkpoints/
 │
 ├── figures/
+│   ├── architecture.png
+│   ├── accuracy_matrix.png
 │   ├── graphs/
-│   ├── qualitative_examples/
+│   └── qualitative_examples/
+│       ├── sample_1.png
+│       ├── sample_2.png
+│       ├── sample_3.png
+│       ├── sample_4.png
+│       └── sample_5.png
 │
 ├── README.md
 └── requirements.txt
 ```
-
-> Adjust the folder names to match your actual repository.
 
 ---
 
@@ -315,10 +339,8 @@ This project builds upon the original **TruFor** architecture and extends it thr
 ---
 
 ## 📧 Contact
-You can add your name, email, or LinkedIn here.
 
 ```text
-Name: Your Name
-Email: your.email@example.com
-LinkedIn: https://linkedin.com/in/your-profile
+Name: Pawan Kumar
+Name: Shubham Chakma
 ```
