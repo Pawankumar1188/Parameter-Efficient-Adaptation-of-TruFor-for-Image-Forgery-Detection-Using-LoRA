@@ -1,6 +1,6 @@
-# 📌 Parameter-Efficient Adaptation of TruFor for Image Forgery Detection Using LoRA
+#  Parameter-Efficient Adaptation of TruFor for Image Forgery Detection Using LoRA
 
-## 🔎 Project Overview
+##  Project Overview
 This project focuses on **image forgery detection and localization** using **TruFor**, a transformer-based forensic model for detecting manipulated image regions.  
 The main goal of this work is to make TruFor more efficient and better adapted for **modern AI-generated and diffusion-based image forgeries** by using **LoRA (Low-Rank Adaptation)**.
 
@@ -8,7 +8,7 @@ Instead of fully retraining the entire TruFor network, this project applies **pa
 
 ---
 
-## ❗ Problem Statement
+##  Problem Statement
 Traditional image forgery detection models are often computationally expensive to fine-tune and may not be specifically adapted to **diffusion-based manipulations** such as:
 
 - object insertion
@@ -21,7 +21,7 @@ At the same time, full fine-tuning is costly and not practical for limited-resou
 
 ---
 
-## 💡 Solution Approach
+##  Solution Approach
 To address this, this project proposes a **LoRA-based parameter-efficient adaptation of TruFor**.
 
 ### What was done
@@ -38,7 +38,7 @@ This approach preserves the strong forensic prior of TruFor while making it more
 
 ---
 
-## 🛠 Technologies Used
+##  Technologies Used
 - **Python**
 - **PyTorch**
 - **PEFT (Parameter-Efficient Fine-Tuning)**
@@ -119,7 +119,7 @@ The model was evaluated using:
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 ### Baseline TruFor
 ```text
@@ -251,7 +251,7 @@ project-root/
 
 ---
 
-## ▶️ How to Run the Project
+##  How to Run the Project
 
 ### 1. Clone the repository
 ```bash
@@ -292,7 +292,7 @@ Run the training notebook or training script with the required paths and GPU set
 
 ---
 
-## 📘 GitHub Notebook Link
+##  GitHub Notebook Link
 Add your GitHub notebook link here:
 
 ```text
@@ -325,7 +325,7 @@ Possible extensions of this project include:
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 This project demonstrates that **LoRA-based parameter-efficient fine-tuning** can successfully adapt TruFor for modern image forgery localization tasks.  
 Without retraining the full model, the adapted version improves **Dice, IoU, Precision, and Accuracy**, while significantly reducing false positives on real images.
 
@@ -333,7 +333,7 @@ In short, this work shows that **TruFor + LoRA** is a practical and efficient ap
 
 ---
 
-## 🙌 Acknowledgment
+##  Acknowledgment
 This project builds upon the original **TruFor** architecture and extends it through **LoRA-based lightweight adaptation** for efficient fine-tuning and improved performance.
 
 ---
