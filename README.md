@@ -337,6 +337,7 @@ This project builds upon the original **TruFor** architecture and extends it thr
 ## 📧 Contact
 
 ```text
-Name: Pawan Kumar
-Name: Shubham Chakma
+Group - 236
+Name: Pawan Kumar 2023UCS1619
+Name: Shubham Chakma 2023UCS1615
 ```
