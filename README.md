@@ -149,7 +149,6 @@ Diffusion-aware Forgery Heatmap + Localization Mask
 ### Architecture Diagram
 ![Architecture Diagram](assets/images/architecture%20of%20our%20model.png)
 
-> *LoRA adapters (shown in blue) are injected into selected attention projections while the rest of the backbone remains frozen.*
 
 ---
 
@@ -175,11 +174,8 @@ Training and validation loss decreased steadily, and the best validation checkpo
 | Predicted Forged Ratio | 0.999973 | 0.245164 |
 | Predicted Forged Pixels | 262136.84 | 64268.17 |
 
-### Accuracy & Metrics Comparison
 
-![Accuracy Matrix](https://raw.githubusercontent.com/your-username/your-repo/main/figures/accuracy_matrix.png)
 
-> *Bar chart comparing Dice, IoU, Precision, Recall, and Accuracy between Baseline and LoRA-Adapted TruFor.*
 
 ### Interpretation
 - The **baseline** tends to over-segment and mark almost everything as forged
