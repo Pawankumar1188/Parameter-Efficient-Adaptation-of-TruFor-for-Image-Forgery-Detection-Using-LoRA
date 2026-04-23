@@ -217,7 +217,7 @@ project-root/
 │
 ├── notebooks/
 │   ├── training_and_evaluation.ipynb
-│   ├── qualitative_analysis.ipynb
+│   ├── complete notebook code.zip
 │
 ├── src/
 │   ├── data_loader.py
