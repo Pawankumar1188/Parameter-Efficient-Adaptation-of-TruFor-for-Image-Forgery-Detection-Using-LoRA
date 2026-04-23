@@ -246,8 +246,8 @@ project-root/
 
 ### 1. Clone the repository
 ```bash
-git clone <your-github-repo-link>
-cd <repo-folder>
+git clone https://github.com/Pawankumar1188/Parameter-Efficient-Adaptation-of-TruFor-for-Image-Forgery-Detection-Using-LoRA.git
+cd Parameter-Efficient-Adaptation-of-TruFor-for-Image-Forgery-Detection-Using-LoRA/notebooks
 ```
 
 ### 2. Install dependencies
