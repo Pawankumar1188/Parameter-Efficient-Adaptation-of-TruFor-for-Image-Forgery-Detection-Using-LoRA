@@ -225,11 +225,6 @@ project-root/
 │   ├── train.py
 │   ├── evaluate.py
 │
-├── outputs/
-│   ├── heatmaps/
-│   ├── overlays/
-│   ├── checkpoints/
-│
 ├── figures/
 │   ├── architecture.png
 │   ├── accuracy_matrix.png
@@ -292,21 +287,11 @@ Run the training notebook or training script with the required paths and GPU set
 Add your GitHub notebook link here:
 
 ```text
-https://github.com/your-username/your-repo/blob/main/notebooks/training_and_evaluation.ipynb
+https://github.com/Pawankumar1188/Parameter-Efficient-Adaptation-of-TruFor-for-Image-Forgery-Detection-Using-LoRA/blob/main/notebooks/training_and_evaluation%20final.ipynb
 ```
 
 ---
 
-## 🌐 NBViewer Link
-For large notebooks, add an NBViewer link here:
-
-```text
-https://nbviewer.org/github/your-username/your-repo/blob/main/notebooks/training_and_evaluation.ipynb
-```
-
-NBViewer is useful when GitHub does not render heavy notebooks properly.
-
----
 
 ## 🚀 Future Improvements
 Possible extensions of this project include:
