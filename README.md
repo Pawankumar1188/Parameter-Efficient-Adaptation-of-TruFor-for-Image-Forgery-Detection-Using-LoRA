@@ -225,7 +225,7 @@ project-root/
 │   ├── train.py
 │   ├── evaluate.py
 │
-├── figures/
+├── assets/images/
 │   ├── architecture.png
 │   ├── accuracy_matrix.png
 │   ├── graphs/
